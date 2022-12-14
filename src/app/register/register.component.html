@@ -1,0 +1,37 @@
+<div class="container-sm mt-5 bg-info justify-content-center">
+  <div>
+    <h1 class="text-white text-decoration-underline">Register Page</h1>
+  </div>
+
+  <div class="row center">
+    <div>
+    <label for="username" class="mt-3">Username :</label>
+    <input type="text" class="form-control" name="username" #ipregisteruser />
+
+    <label for="pwd" class="mt-3">Password :</label>
+    <input type="password" class="form-control" name="pwd" #ipregisterpwd />
+
+    <label for="email" class="mt-3">Email :</label>
+    <input type="email" class="form-control" name="email" #ipregisteremail />
+
+    <label for="phno" class="mt-3">Phone No :</label>
+    <input type="number" class="form-control" name="phno" [(ngModel)]="phoneNum" />
+
+    <button
+    class="btn btn-success mt-3 mb-3"
+    type="button"
+
+      (click)="
+        registerMethod(
+          ipregisteruser.value,
+          ipregisterpwd.value,
+          ipregisteremail.value,
+          phoneNum
+        )
+      "
+    >
+      Register here
+    </button>
+</div>
+  </div>
+</div>

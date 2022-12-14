@@ -1,0 +1,9 @@
+<div class="container mt-5 mb-5 bg-info">
+  <div *ngIf="displayLoggedInUserData.length != 0">
+    <h1>LoggedIn user details:</h1>
+
+    <div *ngFor="let details of displayLoggedInUserData">
+      {{ details }}
+    </div>
+  </div>
+</div>

@@ -1,0 +1,15 @@
+<div class="container mt-5 bg-info justify-content-center">
+  <div>
+    <h1 class="text-white text-decoration-underline">Login Page</h1>
+  </div>
+  <div>
+    <label for="username" >Username :</label>
+    <input type="text" class="form-control mb-3" name="username" #ipuser />
+
+    <label for="password">Password :</label>
+    <input type="password" class="form-control" name="password" required #ippwd />
+
+    <button class="btn btn-success mt-3 mb-3" (click)="loginMethod(ipuser.value, ippwd.value)">Login</button
+    >
+  </div>
+</div>
